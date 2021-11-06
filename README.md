@@ -1,7 +1,7 @@
 # Discord.py
 Discord.py Template
 
-You can add a commands very easily !
+You can add commands very easily !
 
 
 # Sample

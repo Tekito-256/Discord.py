@@ -25,8 +25,8 @@ def CommandEntry(cmdName, funcCallbk):
 
 async def ExecuteCommand(message, text):
     for i in range(len(commands)):
-        if text.startswith(commands[i]):
-            args = text.split(" ")
+        args = text.split(" ")
+        if args[0] == commands[i]:
             await cmdCallbacks[i](message, args[1:])
 
 client = discord.Client()

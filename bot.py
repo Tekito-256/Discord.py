@@ -1,6 +1,6 @@
 import discord
-from os import getenv
 
+TOKEN = "Paste your token here."
 CMD_TEXT = "!t"
 
 def InitCommands():
@@ -40,5 +40,4 @@ async def on_message(message):
     if not message.author.bot and message.content.startswith(CMD_TEXT + " "):
         await ExecuteCommand(message, message.content[len(CMD_TEXT) + 1:])
 
-token = getenv('DISCORD_BOT_TOKEN')
-client.run(token)
+client.run(TOKEN)
